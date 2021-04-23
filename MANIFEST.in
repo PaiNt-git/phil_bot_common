@@ -1,0 +1,7 @@
+include MANIFEST.in
+include README.md
+recursive-include redist *
+include phil_bot/secrets/README.txt
+exclude phil_bot/secrets/keep
+exclude phil_bot/secrets/bot_cred.json
+exclude phil_bot/secrets/database.json

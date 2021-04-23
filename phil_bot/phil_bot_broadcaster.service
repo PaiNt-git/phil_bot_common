@@ -1,0 +1,12 @@
+[Unit]
+Description=phil_bot_broadcaster service
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=15
+User=root
+ExecStart=sudo -u root /home/phil_bot/phil_bot/broadcaster.sh
+[Install]
+WantedBy=multi-user.target

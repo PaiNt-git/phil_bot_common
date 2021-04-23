@@ -1,0 +1,13 @@
+[Unit]
+Description=phil_bot service
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=15
+User=root
+[Service]
+ExecStart=sudo -u root /home/phil_bot/phil_bot/main.sh
+[Install]
+WantedBy=multi-user.target
